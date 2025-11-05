@@ -1,32 +1,71 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-header {
-  background-color: crimson;
+Header {
+  background-color: rgb(151, 250, 3);
   display: flex;
   justify-content: flex-start;
   justify-content: flex-end;
   justify-content: center;
   justify-content: space-around;
-  height: 15vh;
+  height: 10vh;
   align-items: flex-start;
   align-items: flex-end;
   align-items: center;
 }
-header h1 {
-  border: solid yellow;
+
+Header h1 {
+  border: solid rgb(0, 0, 0);
 }
-header nav {
-  border: solid green;
+
+Header nav {
+  border: solid rgb(0, 0, 0);
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 60%;
 }
-header a {
+
+Header a {
   text-decoration: none;
-  font-size: 2rem;
-  color: black;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+}
+
+.ProdutosDisponiveis {
+  background-color: rgb(255, 251, 1);
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ProdutosDisponiveis article {
+  border: solid black;
+  width: 20%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ProdutosDisponiveis article img {
+  width: 100%;
+  height: 35vh;
+}
+
+.ProdutosDisponiveis article button {
+  width: 50%;
+  height: 4vh;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 25px;
+  font-size: 1rem;
+} /*# sourceMappingURL=style.css.map */
