@@ -5,7 +5,6 @@
 }
 
 Header {
-  background-color: rgb(151, 250, 3);
   display: flex;
   justify-content: flex-start;
   justify-content: flex-end;
@@ -17,21 +16,46 @@ Header {
   align-items: center;
 }
 
-Header h1 {
-  border: solid rgb(0, 0, 0);
+div {
+  display: flex;
+  justify-content: space-around;
+  width: 12%;
+  align-items: center;
 }
 
 Header nav {
-  border: solid rgb(0, 0, 0);
   display: flex;
   justify-content: space-evenly;
   width: 60%;
+  align-items: center;
 }
 
 Header a {
   text-decoration: none;
   font-size: 1.3rem;
-  color: rgb(0, 0, 0);
+  color: #4B5563;
+}
+
+.btnVerdeHeader {
+  background-color: #21C05C;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+.primeiraSection {
+  background-color: red;
+  height: 50vh;
+}
+.primeiraSection section {
+  border: solid;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .ProdutosDisponiveis {
