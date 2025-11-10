@@ -95,3 +95,42 @@ section{
   border-radius: 25px;
   font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */
+
+
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  .caixaLogo {
+    border: solid;
+    width: 70%;
+  }
+  nav {
+    border: solid;
+    width: 100%;
+    a {
+      font-size: 0.8rem;
+    }
+    .btnVerdeHeader {
+      font-size: 0.8rem;
+    }
+  }
+  //Section Produtos Disponíveis
+  .produtosDisponiveis {
+    display: flex; //Não teria necessidade de usar. Ele já foi ativado na linha 87
+    flex-direction: column;
+    background-color: pink;
+    article {
+      width: 80%;
+      text-align: center;
+      button {
+       font-size: 1rem;
+       width: 70%;
+        font-weight: 400;
+      }
+    }
+  }
+}
