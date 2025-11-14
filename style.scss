@@ -4,99 +4,151 @@
   box-sizing: border-box;
 }
 
-Header {
-
+header {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  justify-content: flex-end;
-  justify-content: center;
   justify-content: space-around;
-  height: 10vh;
+  height: 15vh;
   align-items: flex-start;
   align-items: flex-end;
   align-items: center;
 }
-div{
-  //border: solid;
+
+.caixaLogo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 12%;
   align-items: center;
 }
-Header h1 {
-  //border: solid rgb(0, 0, 0);
+
+h1 {
+  font-size: 2rem;
 }
-Header nav {
-  //border: solid rgb(0, 0, 0);
+
+nav {
   display: flex;
   justify-content: space-evenly;
-  width: 60%;
+  width: 40%;
   align-items: center;
 }
-Header a {
+
+a {
   text-decoration: none;
-  font-size: 1.3rem;
-  color: #4B5563;
+  font-size: 1.5rem;
+  color: #4b5563;
 }
-.btnVerdeHeader{
-  background-color:#21C05C;
+
+.btnVerdeHeader {
+  background-color: #21c05c;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   padding: 18px;
   border-radius: 6px;
-
 }
 
-//Primeira Section 
-.primeiraSection{
-  background-color: red;
-  height: 50vh;
-
-section{
-  border: solid;
-  width: 50%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-}
-
-.ProdutosDisponiveis {
-  background-color: rgb(255, 251, 1);
-  height: 75vh;
+.primeiraSection {
+  //border: solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 60vh;
 }
-.ProdutosDisponiveis article {
-  border: solid black;
+.primeiraSection section {
+  //border: solid green;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.primeiraSection section h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  width: 55%;
+  //border: solid red;
+}
+.primeiraSection section p {
+  font-size: 1.25rem;
+  width: 50%;
+  //border: solid blue;
+}
+
+.boxBtnsPrimeiraSection {
+  //border: solid purple;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.boxBtnsPrimeiraSection button {
+  cursor: pointer;
+  padding: 30px 40px;
+}
+
+.produtosDisponiveis {
+  background-color: rgb(203, 244, 230);
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: center;
+}
+.produtosDisponiveis article {
+  //border: solid red;
   width: 20%;
   height: 60vh;
   display: flex;
-  flex-direction: row;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.ProdutosDisponiveis article img {
-  width: 100%;
-  height: 35vh;
+
+.dadosNumericos{
+  background-color: #f3f5f8;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  div{
+    //border: solid;
+    width: 25%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h2{
+      color: #16a34a;
+    }
+  }
+
 }
-.ProdutosDisponiveis article button {
-  width: 50%;
-  height: 4vh;
+
+
+
+
+
+
+
+
+.produtosDisponiveis article img {
+  width: 100%;
+  height: 30vh;
+  border: solid;
+}
+.produtosDisponiveis article button {
+  width: 45%;
+  height: 5vh;
   cursor: pointer;
   margin-bottom: 1rem;
   background-color: #16a34a;
   color: #ffffff;
-  font-weight: 700;
-  border-radius: 25px;
-  font-size: 1rem;
-}/*# sourceMappingURL=style.css.map */
-
-
+  font-weight: 900;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
 
 @media (max-width: 500px) {
   header {
@@ -111,26 +163,64 @@ section{
   nav {
     border: solid;
     width: 100%;
-    a {
-      font-size: 0.8rem;
-    }
-    .btnVerdeHeader {
-      font-size: 0.8rem;
-    }
   }
-  //Section Produtos Disponíveis
-  .produtosDisponiveis {
-    display: flex; //Não teria necessidade de usar. Ele já foi ativado na linha 87
+  nav a {
+    font-size: 0.8rem;
+  }
+  nav .btnVerdeHeader {
+    font-size: 0.8rem;
+  }
+  .primeiraSection {
+    background-color: violet;
+    display: flex;
     flex-direction: column;
-    background-color: pink;
-    article {
-      width: 80%;
-      text-align: center;
-      button {
-       font-size: 1rem;
-       width: 70%;
-        font-weight: 400;
+    text-align: center;
+    height: 80vh;
+  }
+  .dadosNumericos{
+    background-color: #ffffff;
+    height: 20vh;
+
+    div{
+      width: 25%;
+
+      h2{
+        font-size: 1.6rem;
       }
     }
   }
-}
+  .primeiraSection section {
+    height: 70vh;
+    background-color: #16a34a;
+  }
+  .primeiraSection section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .primeiraSection section p {
+    width: 100%;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection {
+    width: 100%;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection button {
+    padding: 20px 30px;
+  }
+  .primeiraSection img {
+    width: 50%;
+  }
+  .produtosDisponiveis {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+  }
+  .produtosDisponiveis article {
+    width: 80%;
+    text-align: center;
+  }
+  .produtosDisponiveis article button {
+    font-size: 1rem;
+    width: 70%;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=style.css.map */
