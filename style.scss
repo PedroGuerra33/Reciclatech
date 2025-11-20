@@ -53,6 +53,10 @@ a {
   justify-content: space-around;
   align-items: center;
   height: 60vh;
+
+}
+.tituloPrincipal{
+  color: black;
 }
 .primeiraSection section {
   //border: solid green;
@@ -85,7 +89,7 @@ a {
 }
 
 .produtosDisponiveis {
-  background-color: rgb(203, 244, 230);
+  background-color: rgb(255, 255, 255);
   height: 85vh;
   display: flex;
   justify-content: space-evenly;
@@ -94,9 +98,10 @@ a {
   align-items: flex-end;
   align-items: flex-start;
   align-items: center;
-}
-.produtosDisponiveis article {
-  //border: solid red;
+
+article {
+  border: solid #16A34A;
+  border-radius: 15px;
   width: 20%;
   height: 60vh;
   display: flex;
@@ -104,7 +109,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
+}
 .dadosNumericos{
   background-color: #f3f5f8;
   display: flex;
@@ -125,8 +130,81 @@ a {
   }
 
 }
+.comoFunciona{
+height: 70vh;
+font-weight: 400;
+}
+.controle{
+ display: flex;
+  flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+   height: 10vh;
+   margin-left: 290px;
+   padding-top: 70px;
+   
+  
+}
+.titulo{
+  color: black;
+}
 
+.doadorAdiquitinte{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  width: 100%;
+  
+  .tituloCard{
+  display: flex;
+        align-items: center;
+        gap: 10px;
+}
+  .doador{
+    border: none;
+    width: 30%;
+    height: 28vh;
+    text-align: left;
+    background-color:#F5F7FB ;
+    padding: 20px;
+    
 
+    
+    }
+
+    h3{
+      border: none;
+      font-size: 25px;
+      font-weight:400 ;
+      color: #16A34A;
+      
+    }
+    p{
+      font-size:16px ;
+      font-weight: 400;
+      margin: 15px;
+      
+    }
+    ul{
+      font-size: 16px;
+      font-weight: 700;
+    }
+    
+  }
+  .adiquirinte{
+    border: none;
+    width: 30%;
+    height: 28vh;
+    background-color:#F5F7FB ;
+    padding: 20px;
+  }
+
+  h2{
+     border: none;
+      font-size: 25px;
+      font-weight:700 ;
+    color: #2563EB;
+  }
 
 
 
@@ -136,7 +214,7 @@ a {
 .produtosDisponiveis article img {
   width: 100%;
   height: 30vh;
-  border: solid;
+  //border: solid;
 }
 .produtosDisponiveis article button {
   width: 45%;
